@@ -36,7 +36,7 @@ class _DataOfBirthState extends State<DataOfBirth> {
         elevation: 5,
         child: ListTile(
           title: Text(
-            "DD/MM/YYY",
+            selectedDate == null ? "DD/MM/YYY" : selectedDate!,
             style: AppTextStyle.semiBold20.copyWith(
               color: AppColor.primaryColor,
             ),

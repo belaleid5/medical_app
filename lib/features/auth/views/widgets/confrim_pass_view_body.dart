@@ -4,9 +4,16 @@ import 'package:medical_app/core/widgets/sup_title_message_sceen.dart';
 import 'package:medical_app/features/auth/views/widgets/cusom_text_form_field.dart';
 import 'package:medical_app/features/auth/views/widgets/form_title.dart';
 
-class ConfirmPassowrdViewBody extends StatelessWidget {
+class ConfirmPassowrdViewBody extends StatefulWidget {
   const ConfirmPassowrdViewBody({super.key});
 
+  @override
+  State<ConfirmPassowrdViewBody> createState() =>
+      _ConfirmPassowrdViewBodyState();
+}
+
+class _ConfirmPassowrdViewBodyState extends State<ConfirmPassowrdViewBody> {
+  late String password, confrmpassword;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,8 +34,17 @@ class ConfirmPassowrdViewBody extends StatelessWidget {
           SizedBox(height: 7),
 
           CustomTextFormField(
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return "Please enter Some Text";
+              }
+              return "";
+            },
             keyboardType: TextInputType.visiblePassword,
             hint: "**********",
+            onSaved: (value) {
+              password = value!;
+            },
           ),
           SizedBox(height: 12),
 
@@ -36,8 +52,17 @@ class ConfirmPassowrdViewBody extends StatelessWidget {
           SizedBox(height: 7),
 
           CustomTextFormField(
+            validator: (value) {
+              if (value == password) {
+                return "Not Confirm passowrd";
+              }
+              return "";
+            },
             keyboardType: TextInputType.visiblePassword,
             hint: "**********",
+            onSaved: (value) {
+              confrmpassword = value!;
+            },
           ),
         ],
       ),

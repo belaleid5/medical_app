@@ -10,17 +10,27 @@ class CustomTextFormField extends StatelessWidget {
     required this.hint,
     this.icon,
     this.colorHint,
+    this.obscureText = false,
+    required this.onSaved,
+    this.validator,
   });
   final TextInputType keyboardType;
   final String hint;
-  final IconData? icon;
+  final Widget? icon;
   final Color? colorHint;
+  final bool obscureText;
+  final void Function(String?) onSaved;
+  final String Function(String?)? validator;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validator,
+      onSaved: onSaved,
+      obscureText: obscureText,
       keyboardType: keyboardType,
       decoration: InputDecoration(
-        suffixIcon: Icon(icon),
+        suffixIcon: icon,
         fillColor: AppColor.lightSecondryColor,
         filled: true,
         hintText: hint,
@@ -30,6 +40,8 @@ class CustomTextFormField extends StatelessWidget {
         enabledBorder: biuldBorder(),
         focusedBorder: biuldBorder(),
         disabledBorder: biuldBorder(),
+
+        errorBorder: biuldBorder(),
       ),
     );
   }

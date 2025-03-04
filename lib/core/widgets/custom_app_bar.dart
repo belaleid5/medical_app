@@ -9,7 +9,13 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(Icons.arrow_back_ios, color: AppColor.primaryColor),
+        IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: AppColor.primaryColor,
+        ),
         SizedBox(width: MediaQuery.sizeOf(context).width * 0.28),
         Text(
           title,

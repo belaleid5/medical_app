@@ -1,0 +1,1 @@
+const kIsSplashView = "spalshView";
