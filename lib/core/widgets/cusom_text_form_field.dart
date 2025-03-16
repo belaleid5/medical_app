@@ -8,19 +8,23 @@ class CustomTextFormField extends StatelessWidget {
     super.key,
     required this.keyboardType,
     required this.hint,
-    this.icon,
     this.colorHint,
+    this.suffixIcon,
+    this.obscureText = false,
   });
   final TextInputType keyboardType;
   final String hint;
-  final IconData? icon;
+
   final Color? colorHint;
+  final bool obscureText;
+  final Widget? suffixIcon;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obscureText,
       keyboardType: keyboardType,
       decoration: InputDecoration(
-        suffixIcon: Icon(icon),
+        suffixIcon: suffixIcon,
         fillColor: AppColor.lightSecondryColor,
         filled: true,
         hintText: hint,

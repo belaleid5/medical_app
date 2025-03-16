@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_text_style.dart';
 import 'package:medical_app/core/utils/app_color.dart';
-import 'package:medical_app/core/utils/app_text_style.dart';
-import 'package:medical_app/features/auth/views/screens/sing_up_view.dart';
+import 'package:medical_app/features/auth/peresention/views/lgoin/login_view.dart';
 
 class HaveOrDontHAveAnAcount extends StatelessWidget {
   const HaveOrDontHAveAnAcount({
@@ -29,7 +28,7 @@ class HaveOrDontHAveAnAcount extends StatelessWidget {
 
             GestureDetector(
               onTap: () {
-                Navigator.pushReplacementNamed(context, SignUpView.routeName);
+                Navigator.pushReplacementNamed(context, LoginView.routeName);
               },
               child: Text(
                 secondTitle,

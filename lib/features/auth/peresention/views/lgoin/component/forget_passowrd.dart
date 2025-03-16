@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/utils/app_text_style.dart';
-import 'package:medical_app/features/auth/views/screens/confirm_passowrd_view.dart';
+import 'package:medical_app/features/auth/peresention/views/confrim_password/confirm_passowrd_view.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
