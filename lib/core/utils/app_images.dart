@@ -10,6 +10,7 @@ class AppImages {
   /// Assets for assetsImagesFavorite
   /// assets/images/favorite.svg
   static const String assetsImagesFavorite = "assets/images/favorite.svg";
+  static const String assetsDividerDotted = "assets/images/dividerDotted.svg";
 
   /// Assets for assetsImagesFingerItem
   /// assets/images/fingerItem.svg

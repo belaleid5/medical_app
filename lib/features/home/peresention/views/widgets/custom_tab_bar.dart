@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/features/home/peresention/data/model/tab_bar_model.dart';
 import 'package:medical_app/features/home/peresention/views/widgets/tab_bar_item.dart';
@@ -13,7 +14,7 @@ class CustomTapBar extends StatefulWidget {
 class _CustomTapBarState extends State<CustomTapBar>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  int currentIndex = 0; // لتحديد العنصر النشط
+  int currentIndex = 0; //
 
   @override
   void initState() {
@@ -24,10 +25,9 @@ class _CustomTapBarState extends State<CustomTapBar>
       vsync: this,
     );
 
-    _tabController.addListener(() {
+    Future.delayed(Duration.zero, () {
       setState(() {
-        currentIndex =
-            _tabController.index; // تحديث العنصر النشط عند تغيير التاب
+        currentIndex = _tabController.index;
       });
     });
   }
@@ -57,7 +57,7 @@ class _CustomTapBarState extends State<CustomTapBar>
       dividerColor: Colors.transparent,
       tabs: List<Widget>.generate(TabBarModelList.length, (index) {
         return Tab(
-          height: 70,
+          height: context.scaleHeight * 70,
           icon: TabBarItem(
             color: currentIndex == index ? AppColor.primaryColor : Colors.white,
             number: TabBarModelList[index].number,

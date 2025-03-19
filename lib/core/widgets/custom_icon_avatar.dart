@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:medical_app/core/utils/app_color.dart';
 
 class CustomIconAvatar extends StatelessWidget {
-  const CustomIconAvatar({super.key, required this.icon});
-  final String icon;
+  const CustomIconAvatar({
+    super.key,
+    required this.icon,
+    required this.color,
+    this.colorIcon,
+    this.radius,
+    this.sizeIcon,
+  });
+  final IconData icon;
+  final Color color;
+  final Color? colorIcon;
+  final double? radius;
+  final double? sizeIcon;
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 21,
-      backgroundColor: AppColor.secondaryColor,
-      child: SvgPicture.asset(icon, height: 21),
+      radius: radius == null ? 21 : radius,
+      backgroundColor: color,
+      child: Icon(
+        icon,
+        color: colorIcon == null ? Colors.black : colorIcon,
+        size: sizeIcon,
+      ),
     );
   }
 }
