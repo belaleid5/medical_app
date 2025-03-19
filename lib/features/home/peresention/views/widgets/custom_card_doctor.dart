@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
-import 'package:medical_app/core/utils/app_color.dart';
-import 'package:medical_app/core/utils/app_images.dart';
-import 'package:medical_app/core/utils/app_text_style.dart';
-import 'package:medical_app/core/widgets/custom_icon_avatar.dart';
-import 'package:medical_app/features/home/peresention/views/widgets/biuld_doctor_info.dart';
 import 'package:medical_app/features/home/peresention/views/widgets/build_hour_column.dart';
-import 'package:medical_app/features/home/peresention/views/widgets/hour_text.dart';
+import 'biuld_doctor_info.dart';
 
 class CustomItemCardDateADoctor extends StatelessWidget {
   const CustomItemCardDateADoctor({super.key});

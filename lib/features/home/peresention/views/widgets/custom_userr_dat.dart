@@ -17,7 +17,10 @@ class CustomUserData extends StatelessWidget {
           child: SizedBox(
             height: 41,
             width: 41,
-            child: Image.asset(AppImages.assetsUserImage, fit: BoxFit.cover),
+            child: Image.asset(
+              AppImages.assetsImagesImageUser,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
 

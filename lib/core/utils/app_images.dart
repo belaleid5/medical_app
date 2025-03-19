@@ -2,6 +2,27 @@
 class AppImages {
   AppImages._();
 
+  /// Assets for assetsImagesDividerDotted
+  /// assets/images/dividerDotted.svg
+  static const String assetsImagesDividerDotted =
+      "assets/images/dividerDotted.svg";
+
+  /// Assets for assetsImagesDrAlexander
+  /// assets/images/drAlexander.png
+  static const String assetsImagesDrAlexander = "assets/images/drAlexander.png";
+
+  /// Assets for assetsImagesDrMichel
+  /// assets/images/drMichel.png
+  static const String assetsImagesDrMichel = "assets/images/drMichel.png";
+
+  /// Assets for assetsImagesDrOlivia
+  /// assets/images/drOlivia.png
+  static const String assetsImagesDrOlivia = "assets/images/drOlivia.png";
+
+  /// Assets for assetsImagesDrSophia
+  /// assets/images/drSophia.png
+  static const String assetsImagesDrSophia = "assets/images/drSophia.png";
+
   /// Assets for assetsImagesFaceBookItem
   /// assets/images/faceBookItem.svg
   static const String assetsImagesFaceBookItem =
@@ -10,12 +31,10 @@ class AppImages {
   /// Assets for assetsImagesFavorite
   /// assets/images/favorite.svg
   static const String assetsImagesFavorite = "assets/images/favorite.svg";
-  static const String assetsDividerDotted = "assets/images/dividerDotted.svg";
 
   /// Assets for assetsImagesFingerItem
   /// assets/images/fingerItem.svg
   static const String assetsImagesFingerItem = "assets/images/fingerItem.svg";
-  static const String assetsUserImage = "assets/images/imageUser.png";
 
   /// Assets for assetsImagesGoogleItem
   /// assets/images/googleItem.svg
@@ -25,6 +44,15 @@ class AppImages {
   /// assets/images/HomeBottomBar.svg
   static const String assetsImagesHomeBottomBar =
       "assets/images/HomeBottomBar.svg";
+
+  /// Assets for assetsImagesImageCircularAvatar
+  /// assets/images/imageCircularAvatar.svg
+  static const String assetsImagesImageCircularAvatar =
+      "assets/images/imageCircularAvatar.svg";
+
+  /// Assets for assetsImagesImageUser
+  /// assets/images/imageUser.png
+  static const String assetsImagesImageUser = "assets/images/imageUser.png";
 
   /// Assets for assetsImagesLogoSplashScreen
   /// assets/images/logoSplashScreen.svg

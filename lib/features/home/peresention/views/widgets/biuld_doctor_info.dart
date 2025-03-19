@@ -20,11 +20,11 @@ class BuildDoctorInfo extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 3),
-        SvgPicture.asset(AppImages.assetsDividerDotted),
+        SvgPicture.asset(AppImages.assetsImagesDividerDotted),
         const SizedBox(height: 11),
         BuildDoctorCard(),
         const SizedBox(height: 11),
-        SvgPicture.asset(AppImages.assetsDividerDotted),
+        SvgPicture.asset(AppImages.assetsImagesDividerDotted),
       ],
     );
   }
