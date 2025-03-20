@@ -14,7 +14,6 @@ class TabBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       alignment: Alignment.center,
-      width: 45,
       decoration: BoxDecoration(
         color: color,
         border: Border.all(width: 0.2),

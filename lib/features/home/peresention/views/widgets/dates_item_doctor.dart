@@ -3,7 +3,7 @@ import 'package:medical_app/core/responsive_size_provider/extension_size_provide
 import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/features/home/peresention/views/widgets/custom_card_doctor.dart';
-import 'package:medical_app/features/home/peresention/views/widgets/custom_tab_bar.dart';
+import 'package:medical_app/features/home/peresention/views/widgets/custom_tab_bar_list.dart';
 
 class DatesItemDoctor extends StatelessWidget {
   const DatesItemDoctor({super.key});

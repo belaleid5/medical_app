@@ -15,9 +15,9 @@ class BuildDoctorCard extends StatelessWidget {
       child: Card(
         color: AppColor.lightPrimaryColor,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(5.0),
           child: Row(
-            spacing: 22,
+            spacing: 50,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [BuildDoctorDetails(), BuildActionButtons()],
           ),

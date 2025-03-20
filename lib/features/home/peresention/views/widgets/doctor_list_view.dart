@@ -8,8 +8,9 @@ class DoctorListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
       itemCount: listCardModel.length,
-      padding: const EdgeInsets.symmetric(vertical: 10),
       itemBuilder: (context, index) {
         return DoctorProfileCard(doctor: listCardModel[index]);
       },

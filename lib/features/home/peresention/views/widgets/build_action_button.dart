@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/widgets/custom_icon_avatar.dart';
 
@@ -13,16 +14,16 @@ class BuildActionButtons extends StatelessWidget {
         children: const [
           CustomIconAvatar(
             radius: 8,
-            sizeIcon: 11,
+            sizeIcon: 13,
             icon: Icons.check,
             color: Colors.white,
             colorIcon: AppColor.primaryColor,
           ),
-          SizedBox(width: 4),
+          SizedBox(width: 7),
           CustomIconAvatar(
             radius: 8,
-            sizeIcon: 11,
-            icon: Icons.cancel_sharp,
+            sizeIcon: 13,
+            icon: Icons.clear,
             color: Colors.white,
             colorIcon: AppColor.primaryColor,
           ),

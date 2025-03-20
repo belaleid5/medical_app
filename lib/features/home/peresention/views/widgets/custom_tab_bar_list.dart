@@ -46,7 +46,8 @@ class _CustomTapBarState extends State<CustomTapBar>
           currentIndex = index;
         });
       },
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
       controller: _tabController,
       unselectedLabelColor: Colors.black,
       indicator: BoxDecoration(
@@ -56,12 +57,16 @@ class _CustomTapBarState extends State<CustomTapBar>
       labelColor: Colors.white,
       dividerColor: Colors.transparent,
       tabs: List<Widget>.generate(TabBarModelList.length, (index) {
-        return Tab(
-          height: context.scaleHeight * 70,
-          icon: TabBarItem(
-            color: currentIndex == index ? AppColor.primaryColor : Colors.white,
-            number: TabBarModelList[index].number,
-            month: TabBarModelList[index].month,
+        return SizedBox(
+          width: 80,
+          child: Tab(
+            height: context.scaleHeight * 70,
+            icon: TabBarItem(
+              color:
+                  currentIndex == index ? AppColor.primaryColor : Colors.white,
+              number: TabBarModelList[index].number,
+              month: TabBarModelList[index].month,
+            ),
           ),
         );
       }),

@@ -26,9 +26,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
           primaryColor: Colors.white,
+          scaffoldBackgroundColor: Colors.white,
         ),
+
         initialRoute: HomeView.routName,
         onGenerateRoute: onGenerateRoute,
       ),
