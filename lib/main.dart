@@ -6,7 +6,6 @@ import 'package:intl/intl_standalone.dart'
 import 'package:medical_app/core/helper_functions/material_route.dart';
 import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
 import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
-import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
 import 'package:medical_app/features/favorite/presention/views/favorite_view.dart';
 
 Future<void> main() async {
