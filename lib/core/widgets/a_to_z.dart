@@ -14,7 +14,7 @@ class AToZ extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
-        "A -> Z",
+        "A ---> Z",
         style: AppTextStyle.semiBold12.copyWith(
           color: color == null ? Colors.white : color,
         ),

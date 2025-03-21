@@ -8,22 +8,27 @@ class DoctorsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
-      child: Column(
-        children: [
-          MenuIconsForSortBy(),
-          ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            itemCount: listDoctorsModelDataCardInfo.length,
-            itemBuilder: (context, index) {
-              return CardDoctorInfoItem(
-                modelCard: listDoctorsModelDataCardInfo[index],
-              );
-            },
-          ),
-        ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30),
+        child: Column(
+          children: [
+            SizedBox(height: 20),
+
+            MenuIconsForSortBy(),
+            SizedBox(height: 13),
+            ListView.builder(
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              itemCount: listDoctorsModelDataCardInfo.length,
+              itemBuilder: (context, index) {
+                return CardDoctorInfoItem(
+                  modelCard: listDoctorsModelDataCardInfo[index],
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

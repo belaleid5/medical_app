@@ -9,7 +9,7 @@ class ImageIconAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 12,
+      radius: 15,
       backgroundColor: AppColor.lightPrimaryColor,
       child: SvgPicture.asset(image, height: 12, width: 12),
     );

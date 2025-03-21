@@ -59,7 +59,7 @@ List<CardDoctorModel> listCardModel = [
   CardDoctorModel(
     isRating: Icon(Icons.star_border_outlined, color: AppColor.primaryColor),
     numMessage: 90,
-    image: AppImages.assetsImagesDrMechial,
+    image: AppImages.assetsImagesDrMicheal,
     name: "Dr. Michael Davidson, M.D.",
     job: "Nano-Dermatology",
     rating: 4.8,

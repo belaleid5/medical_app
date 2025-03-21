@@ -36,7 +36,7 @@ List<DoctorsModelDataCardInfoModel> listDoctorsModelDataCardInfo = [
     iconExclamation: FontAwesomeIcons.exclamation,
     iconCalender: FontAwesomeIcons.calendar,
     info: "Info",
-    image: AppImages.assetsImagesDrMechial,
+    image: AppImages.assetsImagesDrMicheal,
     name: "Dr. Michael Davidson, M.D",
     job: "Solar Dermatology",
     questions: FontAwesomeIcons.question,

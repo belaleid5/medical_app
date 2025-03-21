@@ -8,20 +8,20 @@ class AppImages {
       "assets/images/dividerDotted.svg";
 
   /// Assets for assetsImagesDrAlexander
-  /// assets/images/drAlexander.svg
-  static const String assetsImagesDrAlexander = "assets/images/drAlexander.svg";
+  /// assets/images/drAlexander.jpg
+  static const String assetsImagesDrAlexander = "assets/images/drAlexander.png";
 
-  /// Assets for assetsImagesDrMechial
-  /// assets/images/drMechial.svg
-  static const String assetsImagesDrMechial = "assets/images/drMechial.svg";
+  /// Assets for assetsImagesDrMicheal
+  /// assets/images/drMicheal.jpg
+  static const String assetsImagesDrMicheal = "assets/images/drMicheal.png";
 
   /// Assets for assetsImagesDrOlivia
-  /// assets/images/drOlivia.svg
-  static const String assetsImagesDrOlivia = "assets/images/drOlivia.svg";
+  /// assets/images/drOlivia.jpg
+  static const String assetsImagesDrOlivia = "assets/images/drOlivia.png";
 
   /// Assets for assetsImagesDrSophia
-  /// assets/images/drSophia.svg
-  static const String assetsImagesDrSophia = "assets/images/drSophia.svg";
+  /// assets/images/drSophia.jpg
+  static const String assetsImagesDrSophia = "assets/images/drSophia.png";
 
   /// Assets for assetsImagesFaceBookItem
   /// assets/images/faceBookItem.svg

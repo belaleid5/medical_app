@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_color.dart';
-import 'package:flutter_svg_provider/flutter_svg_provider.dart' as svg;
 
 class DoctorImage extends StatelessWidget {
   final String image;
@@ -9,10 +8,13 @@ class DoctorImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      backgroundColor: AppColor.lightPrimaryColor,
-      radius: radiusImage == null ? 28 : radiusImage,
-      child: Image(width: 32, height: 32, image: svg.Svg('assets/my_icon.svg')),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(32),
+      child: CircleAvatar(
+        backgroundColor: AppColor.lightPrimaryColor,
+        radius: radiusImage == null ? 28 : radiusImage,
+        child: Image.asset(image),
+      ),
     );
   }
 }
