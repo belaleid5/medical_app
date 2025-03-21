@@ -35,7 +35,7 @@ class MenuIcons extends StatelessWidget {
         CustomIconAvatar(
           radius: 18,
           sizeIcon: 16,
-          icon: modelCard.questions,
+          icon: modelCard.questions!,
           colorIcon: AppColor.primaryColor,
           color: Colors.white,
         ),

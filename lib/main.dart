@@ -7,6 +7,7 @@ import 'package:medical_app/core/helper_functions/material_route.dart';
 import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
 import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
 import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
+import 'package:medical_app/features/favorite/presention/views/favorite_view.dart';
 
 Future<void> main() async {
   await WidgetsFlutterBinding.ensureInitialized();
@@ -29,15 +30,12 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 0,
-          ),
+          appBarTheme: AppBarTheme(color: Colors.white, elevation: 0),
           primaryColor: Colors.white,
           scaffoldBackgroundColor: Colors.white,
         ),
 
-        initialRoute: DoctorsView.routName,
+        initialRoute: FavoriteView.routeName,
         onGenerateRoute: onGenerateRoute,
       ),
     );

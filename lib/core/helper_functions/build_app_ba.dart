@@ -4,11 +4,11 @@ import 'package:medical_app/core/utils/app_images.dart';
 import 'package:medical_app/core/utils/app_text_style.dart';
 import 'package:medical_app/core/widgets/image_icon_avatar.dart';
 
-AppBar buildAppBar() {
+AppBar buildAppBar({required String title}) {
   return AppBar(
     centerTitle: true,
     title: Text(
-      'Doctors',
+      title,
       style: AppTextStyle.semiBold24Weight600.copyWith(
         color: AppColor.primaryColor,
       ),
