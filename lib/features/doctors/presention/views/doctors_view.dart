@@ -4,7 +4,7 @@ import 'package:medical_app/features/doctors/presention/views/widgets/doctor_vie
 
 class DoctorsView extends StatelessWidget {
   const DoctorsView({super.key});
-
+  static const String routName = "doctors_view";
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: buildAppBar(), body: DoctorsViewBody());

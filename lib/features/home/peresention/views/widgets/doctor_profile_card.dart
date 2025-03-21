@@ -48,14 +48,14 @@ class DoctorProfileCard extends StatelessWidget {
                       CustomIconAvatar(
                         radius: 11,
                         sizeIcon: 11,
-                        icon: FontAwesomeIcons.question,
+                        icon: doctor.questions,
                         color: Colors.white,
                         colorIcon: AppColor.primaryColor,
                       ),
                       CustomIconAvatar(
                         radius: 11,
                         sizeIcon: 11,
-                        icon: doctor.isFavorite.icon!,
+                        icon: doctor.isFavorite,
                         color: Colors.white,
                         colorIcon: AppColor.primaryColor,
                       ),

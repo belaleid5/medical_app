@@ -8,20 +8,20 @@ class AppImages {
       "assets/images/dividerDotted.svg";
 
   /// Assets for assetsImagesDrAlexander
-  /// assets/images/drAlexander.png
-  static const String assetsImagesDrAlexander = "assets/images/drAlexander.png";
+  /// assets/images/drAlexander.svg
+  static const String assetsImagesDrAlexander = "assets/images/drAlexander.svg";
 
-  /// Assets for assetsImagesDrMichel
-  /// assets/images/drMichel.png
-  static const String assetsImagesDrMichel = "assets/images/drMichel.png";
+  /// Assets for assetsImagesDrMechial
+  /// assets/images/drMechial.svg
+  static const String assetsImagesDrMechial = "assets/images/drMechial.svg";
 
   /// Assets for assetsImagesDrOlivia
-  /// assets/images/drOlivia.png
-  static const String assetsImagesDrOlivia = "assets/images/drOlivia.png";
+  /// assets/images/drOlivia.svg
+  static const String assetsImagesDrOlivia = "assets/images/drOlivia.svg";
 
   /// Assets for assetsImagesDrSophia
-  /// assets/images/drSophia.png
-  static const String assetsImagesDrSophia = "assets/images/drSophia.png";
+  /// assets/images/drSophia.svg
+  static const String assetsImagesDrSophia = "assets/images/drSophia.svg";
 
   /// Assets for assetsImagesFaceBookItem
   /// assets/images/faceBookItem.svg
@@ -31,6 +31,15 @@ class AppImages {
   /// Assets for assetsImagesFavorite
   /// assets/images/favorite.svg
   static const String assetsImagesFavorite = "assets/images/favorite.svg";
+
+  /// Assets for assetsImagesFavoriteIcon
+  /// assets/images/favoriteIcon.svg
+  static const String assetsImagesFavoriteIcon =
+      "assets/images/favoriteIcon.svg";
+
+  /// Assets for assetsImagesFemaleIcon
+  /// assets/images/femaleIcon.svg
+  static const String assetsImagesFemaleIcon = "assets/images/femaleIcon.svg";
 
   /// Assets for assetsImagesFingerItem
   /// assets/images/fingerItem.svg
@@ -64,15 +73,28 @@ class AppImages {
   static const String assetsImagesLogoWelcomeScreen =
       "assets/images/logoWelcomeScreen.svg";
 
+  /// Assets for assetsImagesMaleIcon
+  /// assets/images/maleIcon.svg
+  static const String assetsImagesMaleIcon = "assets/images/maleIcon.svg";
+
   /// Assets for assetsImagesMemuSearchField
   /// assets/images/memuSearchField.svg
   static const String assetsImagesMemuSearchField =
       "assets/images/memuSearchField.svg";
 
+  /// Assets for assetsImagesMenuIconBlue
+  /// assets/images/menuIconBlue.svg
+  static const String assetsImagesMenuIconBlue =
+      "assets/images/menuIconBlue.svg";
+
   /// Assets for assetsImagesMessageBottomBar
   /// assets/images/messageBottomBar.svg
   static const String assetsImagesMessageBottomBar =
       "assets/images/messageBottomBar.svg";
+
+  /// Assets for assetsImagesMessageIcon
+  /// assets/images/messageIcon.svg
+  static const String assetsImagesMessageIcon = "assets/images/messageIcon.svg";
 
   /// Assets for assetsImagesNoteBottomBar
   /// assets/images/noteBottomBar.svg
@@ -101,6 +123,10 @@ class AppImages {
   /// Assets for assetsImagesSeetings
   /// assets/images/seetings.svg
   static const String assetsImagesSeetings = "assets/images/seetings.svg";
+
+  /// Assets for assetsImagesStarIcon
+  /// assets/images/starIcon.svg
+  static const String assetsImagesStarIcon = "assets/images/starIcon.svg";
 
   /// Assets for assetsImagesStethoscope
   /// assets/images/stethoscope.svg

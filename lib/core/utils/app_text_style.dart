@@ -34,4 +34,10 @@ abstract class AppTextStyle {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+
+  static const TextStyle semiBold24Weight600 = TextStyle(
+    fontFamily: "LeagueSpartan",
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+  );
 }
