@@ -18,10 +18,11 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Icon(Icons.arrow_back_ios, color: AppColor.primaryColor),
 
-        SizedBox(width: MediaQuery.sizeOf(context).width * 0.40),
+        SizedBox(width: MediaQuery.sizeOf(context).width * 0.30),
         Text(
           title,
           style: AppTextStyle.semiBold24.copyWith(color: AppColor.primaryColor),

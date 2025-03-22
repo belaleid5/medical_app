@@ -37,18 +37,18 @@ class DoctorProfileCard extends StatelessWidget {
                     spacing: 10,
                     children: [
                       CustomIconAndTitle(
-                        rating: "${doctor.rating}",
+                        title: "${doctor.rating}",
                         icon: doctor.isRating.icon!,
                       ),
                       CustomIconAndTitle(
-                        rating: "${doctor.numMessage}",
+                        title: "${doctor.numMessage}",
                         icon: FontAwesomeIcons.commentDots,
                       ),
                       Spacer(),
                       CustomIconAvatar(
                         radius: 11,
                         sizeIcon: 11,
-                        icon: doctor.questions,
+                        icon: doctor.questions!,
                         color: Colors.white,
                         colorIcon: AppColor.primaryColor,
                       ),

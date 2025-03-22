@@ -17,7 +17,7 @@ class ProfileViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30.0),
+        padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
         child: Form(
           child: Column(
             spacing: 12,
@@ -26,7 +26,6 @@ class ProfileViewBody extends StatelessWidget {
               CustomAppBar(
                 title: "Profile",
                 iconBar: Icons.settings,
-                colorIcon: Colors.white,
                 color: AppColor.primaryColor,
               ),
               SizedBox(height: 18),
