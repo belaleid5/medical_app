@@ -131,4 +131,6 @@ class AppImages {
   /// Assets for assetsImagesStethoscope
   /// assets/images/stethoscope.svg
   static const String assetsImagesStethoscope = "assets/images/stethoscope.svg";
+  static const String assetsUserImageProfile =
+      'assets/images/userImageProfile.png';
 }
