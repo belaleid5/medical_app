@@ -7,6 +7,7 @@ import 'package:medical_app/core/helper_functions/material_route.dart';
 import 'package:medical_app/core/helper_functions/theme_data.dart';
 import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
 import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
+import 'package:medical_app/features/chat/presention/view/chat_view.dart';
 import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
 import 'package:medical_app/features/notification/presention/view/notification_view.dart';
 import 'package:medical_app/features/profile/presention/views/profile_view.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: themes(),
 
-        initialRoute: NotificationView.routeName,
+        initialRoute: ChatView.routeName,
         onGenerateRoute: onGenerateRoute,
       ),
     );

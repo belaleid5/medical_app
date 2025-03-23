@@ -16,10 +16,10 @@ class CustomBottomNavBar extends StatelessWidget {
 
           backgroundColor: AppColor.primaryColor,
           unselectedItemColor: Colors.white,
-          selectedItemColor: Colors.black,
+          selectedItemColor: Colors.white,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: colorIconSelect ?? Colors.white),
+              icon: Icon(Icons.home, color: Colors.white),
               label: 'Home',
             ),
             BottomNavigationBarItem(
