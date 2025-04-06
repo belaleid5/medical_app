@@ -7,6 +7,7 @@ import 'package:medical_app/features/doctors/presention/views/doctors_view.dart'
 import 'package:medical_app/features/home/peresention/views/home_view.dart';
 import 'package:medical_app/features/notification/presention/view/notification_view.dart';
 import 'package:medical_app/features/profile/presention/views/profile_view.dart';
+import 'package:medical_app/features/schedule/presentaion/view/screens/schedule_profile_doctor_view.dart';
 import 'package:medical_app/features/spalsh/peresention/views/splash_view.dart';
 import 'package:medical_app/features/welcome/views/welcome_view.dart';
 
@@ -38,7 +39,8 @@ MaterialPageRoute onGenerateRoute(RouteSettings settings) {
 
     case ChatView.routeName:
       return MaterialPageRoute(builder: (_) => ChatView());
-
+    case ScheduleProfileDoctorView.routName:
+      return MaterialPageRoute(builder: (_) => ScheduleProfileDoctorView());
     default:
       return MaterialPageRoute(builder: (_) => Scaffold());
   }

@@ -17,10 +17,10 @@ class MenuIconsForSortBy extends StatelessWidget {
         Text("Sort By", style: AppTextStyle.semiBold12Weight300),
 
         AToZ(),
-        ImageIconAvatar(image: AppImages.assetsImagesFavoriteIcon),
-        ImageIconAvatar(image: AppImages.assetsImagesStarIcon),
-        ImageIconAvatar(image: AppImages.assetsImagesFemaleIcon),
-        ImageIconAvatar(image: AppImages.assetsImagesMaleIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesFavoriteIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesStarIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesFemaleIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesMaleIcon),
       ],
     );
   }

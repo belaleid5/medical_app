@@ -7,7 +7,7 @@ class AppImages {
   static const String assetsImagesDividerDotted =
       "assets/images/dividerDotted.svg";
 
-  static const String assetsImagesProfIcon = "assets/images/profIcon.svg";
+  static const String assetsImagesProfIcon = "assets/images/profDoctor.svg";
 
   /// Assets for assetsImagesDrAlexander
   /// assets/images/drAlexander.jpg

@@ -23,11 +23,7 @@ class CustomIconAndTitle extends StatelessWidget {
       ),
       child: Row(
         children: [
-          FaIcon(
-            FontAwesomeIcons.solidHandPointDown,
-            size: 14,
-            color: AppColor.primaryColor,
-          ),
+          FaIcon(icon, size: 14, color: AppColor.primaryColor),
           const SizedBox(width: 3),
           Text(
             title,

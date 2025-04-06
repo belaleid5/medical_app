@@ -13,7 +13,7 @@ class CustomProfessionalSection extends StatelessWidget {
       spacing: 4,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ImageIconAvatar(image: AppImages.assetsImagesProfIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesProfIcon),
         Text(
           'Professional Doctor',
           style: AppTextStyle.semiBold20.copyWith(
