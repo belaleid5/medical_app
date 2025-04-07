@@ -3,6 +3,7 @@ import 'package:medical_app/features/auth/peresention/views/confrim_password/con
 import 'package:medical_app/features/auth/peresention/views/lgoin/login_view.dart';
 import 'package:medical_app/features/auth/peresention/views/sign_up/sing_up_view.dart';
 import 'package:medical_app/features/chat/presention/view/chat_view.dart';
+import 'package:medical_app/features/date_with_doctor/presentaion/views/date_with_doctor.dart';
 import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
 import 'package:medical_app/features/home/peresention/views/home_view.dart';
 import 'package:medical_app/features/notification/presention/view/notification_view.dart';
@@ -41,6 +42,10 @@ MaterialPageRoute onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (_) => ChatView());
     case ScheduleProfileDoctorView.routName:
       return MaterialPageRoute(builder: (_) => ScheduleProfileDoctorView());
+
+    case DateWithDoctorView.routeName:
+      return MaterialPageRoute(builder: (_) => DateWithDoctorView());
+
     default:
       return MaterialPageRoute(builder: (_) => Scaffold());
   }

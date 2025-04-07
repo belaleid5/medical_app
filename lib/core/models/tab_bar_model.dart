@@ -13,3 +13,12 @@ List<TabBarModel> TabBarModelList = [
   TabBarModel(number: "13", month: "FRI"),
   TabBarModel(number: "14", month: "SAT"),
 ];
+
+List<TabBarModel> TabBarDateWithDoctorList = [
+  TabBarModel(number: " 22", month: "MON"),
+  TabBarModel(number: "23", month: "TUE"),
+  TabBarModel(number: "24", month: "WED"),
+  TabBarModel(number: "25", month: "THU"),
+  TabBarModel(number: "26", month: "FRI"),
+  TabBarModel(number: "27", month: "SAT"),
+];
