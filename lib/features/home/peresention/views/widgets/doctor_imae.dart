@@ -14,10 +14,13 @@ class DoctorImage extends StatelessWidget {
   final double? height;
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      backgroundColor: AppColor.lightPrimaryColor,
-      radius: radiusImage == null ? 28 : radiusImage,
-      child: Image.asset(image, height: height, width: 250),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(32),
+      child: CircleAvatar(
+        backgroundColor: AppColor.lightPrimaryColor,
+        radius: radiusImage == null ? 28 : radiusImage,
+        child: Image.asset(image, height: height, width: 250),
+      ),
     );
   }
 }

@@ -6,7 +6,8 @@ import 'package:intl/intl_standalone.dart'
     if (dart.library.html) 'package:intl/intl_browser.dart';
 import 'package:medical_app/core/helper_functions/material_route.dart';
 import 'package:medical_app/core/helper_functions/theme_data.dart';
-import 'package:medical_app/features/date_with_doctor/presentaion/views/date_with_doctor.dart';
+import 'package:medical_app/features/date_with_doctor/presentaion/views/date_with_doctor_view.dart';
+import 'package:medical_app/features/your%20_appointment/presentaion/views/your_appointment_view.dart';
 
 Future<void> main() async {
   await WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: themes(),
-          initialRoute: DateWithDoctorView.routeName,
+          initialRoute: YourAppointmentView.routeName,
           onGenerateRoute: onGenerateRoute,
         );
       },
