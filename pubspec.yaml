@@ -38,6 +38,11 @@ dependencies:
   flutter_svg: ^2.0.17
   intl: ^0.20.2
   shared_preferences: ^2.5.2
+  font_awesome_flutter: ^10.8.0
+  flutter_svg_provider: ^1.0.7
+  flutter_image_compress: ^2.4.0
+  get_it: ^8.0.3
+  chat_bubbles: ^1.7.0
 
 dev_dependencies:
   flutter_test:
@@ -88,3 +93,7 @@ flutter:
           weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/utils/
+  filename: app_images.dart

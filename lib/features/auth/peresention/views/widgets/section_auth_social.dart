@@ -10,11 +10,11 @@ class SectionAuthSocial extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomAuthsocialIcon(image: AppImages.googleItem),
+        CustomAuthsocialIcon(image: AppImages.assetsImagesGoogleItem),
         SizedBox(width: 9),
-        CustomAuthsocialIcon(image: AppImages.faceBookItem),
+        CustomAuthsocialIcon(image: AppImages.assetsImagesFaceBookItem),
         SizedBox(width: 9),
-        CustomAuthsocialIcon(image: AppImages.fingerPrintItem),
+        CustomAuthsocialIcon(image: AppImages.assetsImagesFingerItem),
       ],
     );
   }

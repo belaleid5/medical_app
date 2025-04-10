@@ -16,7 +16,7 @@ class WelcomeViewBody extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CustomLogo(
-          imageLogo: AppImages.logoWelcomeScreen,
+          imageLogo: AppImages.assetsImagesLogoWelcomeScreen,
           colorTitle: AppColor.primaryColor,
           colorSupTitle: AppColor.primaryColor,
         ),

@@ -20,14 +20,14 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   Widget build(BuildContext context) {
     return CustomLogo(
-      imageLogo: AppImages.logoSplashScreen,
+      imageLogo: AppImages.assetsImagesLogoSplashScreen,
       colorTitle: Colors.white,
       colorSupTitle: Colors.white,
     );
   }
 
-  void excuteNavgation() {
-    Future.delayed(Duration(seconds: 3), () {
+  void excuteNavgation() async {
+    await Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, WelcomeView.routeName);
     });
   }
