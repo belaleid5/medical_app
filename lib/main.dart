@@ -7,6 +7,8 @@ import 'package:medical_app/core/helper_functions/material_route.dart';
 import 'package:medical_app/core/helper_functions/theme_data.dart';
 import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
 import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
+import 'package:medical_app/features/favorite/presention/views/favorite_view.dart';
+
 import 'package:medical_app/features/chat/presention/view/chat_view.dart';
 import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
 import 'package:medical_app/features/notification/presention/view/notification_view.dart';
@@ -32,6 +34,14 @@ class MyApp extends StatelessWidget {
       height: context.screenHeight,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          appBarTheme: AppBarTheme(color: Colors.white, elevation: 0),
+          primaryColor: Colors.white,
+          scaffoldBackgroundColor: Colors.white,
+        ),
+
+        initialRoute: FavoriteView.routeName,
+
         theme: themes(),
 
         initialRoute: ChatView.routeName,

@@ -4,6 +4,7 @@ abstract class DoctorInfoDataModel {
   final String image;
   final String name;
   final String job;
+  IconData? questions;
   final IconData? questions;
   final IconData isFavorite;
 
