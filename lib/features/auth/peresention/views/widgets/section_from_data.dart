@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/widgets/custom_button.dart';
-import 'package:medical_app/features/auth/views/widgets/cusom_text_form_field.dart';
-import 'package:medical_app/features/auth/views/widgets/data_of_birth.dart';
-import 'package:medical_app/features/auth/views/widgets/form_title.dart';
-import 'package:medical_app/features/auth/views/widgets/term_use_privacy.dart';
+import 'package:medical_app/core/widgets/cusom_text_form_field.dart';
+import 'package:medical_app/features/auth/peresention/views/sign_up/component/data_of_birth.dart';
+import 'package:medical_app/core/widgets/form_title.dart';
+import 'package:medical_app/features/auth/peresention/views/sign_up/component/term_use_privacy.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/custom_passowrrd_form_field.dart';
 
 class SectionFormData extends StatelessWidget {
   const SectionFormData({super.key});
@@ -35,11 +36,7 @@ class SectionFormData extends StatelessWidget {
 
         FormTitle(title: "Password"),
         SizedBox(height: 5),
-        CustomTextFormField(
-          icon: Icons.visibility_off,
-          keyboardType: TextInputType.visiblePassword,
-          hint: "***************",
-        ),
+        CustomPasswordFormField(),
 
         SizedBox(height: 12),
         FormTitle(title: "Mobile Number"),

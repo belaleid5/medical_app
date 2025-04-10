@@ -4,8 +4,8 @@ import 'package:medical_app/core/utils/app_images.dart';
 import 'package:medical_app/core/widgets/custom_button.dart';
 import 'package:medical_app/core/widgets/custom_logo_screen.dart';
 import 'package:medical_app/core/widgets/sup_title_message_sceen.dart';
-import 'package:medical_app/features/auth/views/screens/login_view.dart';
-import 'package:medical_app/features/auth/views/screens/sing_up_view.dart';
+import 'package:medical_app/features/auth/peresention/views/lgoin/login_view.dart';
+import 'package:medical_app/features/auth/peresention/views/sign_up/sing_up_view.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({super.key});

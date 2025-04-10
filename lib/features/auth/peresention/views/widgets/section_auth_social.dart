@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_images.dart';
-import 'package:medical_app/features/auth/views/widgets/custom_auth_social_icon.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/custom_auth_social_icon.dart';
 
 class SectionAuthSocial extends StatelessWidget {
   const SectionAuthSocial({super.key});

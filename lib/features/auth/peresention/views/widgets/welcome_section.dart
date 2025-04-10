@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/widgets/sup_title_message_sceen.dart';
-import 'package:medical_app/features/auth/views/widgets/welcome_title.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/welcome_title.dart';
 
 class WelcomeSection extends StatelessWidget {
   const WelcomeSection({super.key});

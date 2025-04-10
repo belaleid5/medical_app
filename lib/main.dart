@@ -3,7 +3,7 @@ import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl_standalone.dart'
     if (dart.library.html) 'package:intl/intl_browser.dart';
 import 'package:medical_app/core/helper_functions/material_route.dart';
-import 'package:medical_app/features/spalsh/views/splash_view.dart';
+import 'package:medical_app/features/spalsh/peresention/views/splash_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFEFEFEF)),
       initialRoute: SplashView.routName,
       onGenerateRoute: onGenerateRoute,
     );

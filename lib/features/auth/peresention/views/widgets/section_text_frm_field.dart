@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/widgets/custom_button.dart';
-import 'package:medical_app/features/auth/views/widgets/cusom_text_form_field.dart';
-import 'package:medical_app/features/auth/views/widgets/forget_passowrd.dart';
-import 'package:medical_app/features/auth/views/widgets/form_title.dart';
+import 'package:medical_app/core/widgets/cusom_text_form_field.dart';
+import 'package:medical_app/features/auth/peresention/views/lgoin/component/forget_passowrd.dart';
+import 'package:medical_app/core/widgets/form_title.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/custom_passowrrd_form_field.dart';
 
 class SectionTextFormField extends StatelessWidget {
   const SectionTextFormField({super.key});
@@ -11,24 +12,17 @@ class SectionTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      spacing: 12,
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         FormTitle(title: "Email Or Mopile Number"),
-        SizedBox(height: 12),
         CustomTextFormField(
           keyboardType: TextInputType.emailAddress,
           hint: "example@example.com",
         ),
-        SizedBox(height: 20),
         FormTitle(title: "Password"),
-        SizedBox(height: 12),
-        CustomTextFormField(
-          icon: Icons.visibility_off,
-          keyboardType: TextInputType.visiblePassword,
-          hint: "***************",
-        ),
-        SizedBox(height: 7),
+        CustomPasswordFormField(),
         ForgetPassword(),
         Align(
           alignment: Alignment.center,

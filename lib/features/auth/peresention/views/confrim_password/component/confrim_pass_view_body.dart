@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/widgets/custom_app_bar.dart';
 import 'package:medical_app/core/widgets/sup_title_message_sceen.dart';
-import 'package:medical_app/features/auth/views/widgets/cusom_text_form_field.dart';
-import 'package:medical_app/features/auth/views/widgets/form_title.dart';
+import 'package:medical_app/core/widgets/cusom_text_form_field.dart';
+import 'package:medical_app/core/widgets/form_title.dart';
 
 class ConfirmPassowrdViewBody extends StatelessWidget {
   const ConfirmPassowrdViewBody({super.key});

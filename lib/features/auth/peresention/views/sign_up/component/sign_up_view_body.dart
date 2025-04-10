@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/core/widgets/custom_app_bar.dart';
-import 'package:medical_app/features/auth/views/widgets/don%60t_have_an_account.dart';
-import 'package:medical_app/features/auth/views/widgets/or_signup_section.dart';
-import 'package:medical_app/features/auth/views/widgets/section_auth_social.dart';
-import 'package:medical_app/features/auth/views/widgets/section_from_data.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/don%60t_have_an_account.dart';
+import 'package:medical_app/features/auth/peresention/views/lgoin/component/or_signup_section.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/section_auth_social.dart';
+import 'package:medical_app/features/auth/peresention/views/widgets/section_from_data.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
