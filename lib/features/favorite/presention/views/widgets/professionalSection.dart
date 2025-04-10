@@ -13,6 +13,8 @@ class CustomProfessionalSection extends StatelessWidget {
       spacing: 4,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        ImageIconAvatarSvg(image: AppImages.assetsImagesProfIcon),
+
         ImageIconAvatar(
           image: AppImages.assetsProIcon,
           color: AppColor.primaryColor,

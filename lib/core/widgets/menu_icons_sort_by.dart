@@ -19,6 +19,11 @@ class MenuIconsForSortBy extends StatelessWidget {
         Text("Sort By", style: AppTextStyle.semiBold12Weight300),
 
         AToZ(),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesFavoriteIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesStarIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesFemaleIcon),
+        ImageIconAvatarSvg(image: AppImages.assetsImagesMaleIcon),
+
         ImageIconAvatar(image: AppImages.assetsImagesStarIcon),
         CircleAvatar(
           radius: 16,

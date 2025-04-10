@@ -11,21 +11,25 @@ class CustomTextFormField extends StatelessWidget {
     this.colorHint,
     this.suffixIcon,
     this.obscureText = false,
+    this.maxLines,
+    this.filledColor,
   });
   final TextInputType keyboardType;
   final String hint;
 
-  final Color? colorHint;
+  final Color? colorHint, filledColor;
   final bool obscureText;
   final Widget? suffixIcon;
+  final int? maxLines;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       obscureText: obscureText,
       keyboardType: keyboardType,
+      maxLines: maxLines,
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
-        fillColor: AppColor.lightSecondryColor,
+        fillColor: filledColor ?? AppColor.lightSecondryColor,
         filled: true,
         hintText: hint,
         hintStyle: AppTextStyle.semiBold20.copyWith(

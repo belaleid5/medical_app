@@ -15,9 +15,9 @@ AppBar buildAppBar({required String title}) {
     ),
     actionsPadding: EdgeInsets.only(right: 10),
     actions: [
-      ImageIconAvatar(image: AppImages.assetsImagesSearch),
+      ImageIconAvatarSvg(image: AppImages.assetsImagesSearch),
       const SizedBox(width: 10),
-      ImageIconAvatar(image: AppImages.assetsImagesMenuIconBlue),
+      ImageIconAvatarSvg(image: AppImages.assetsImagesMenuIconBlue),
     ],
   );
 }
