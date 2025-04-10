@@ -19,17 +19,19 @@ class CustomBottomNavBar extends StatelessWidget {
           selectedItemColor: Colors.white,
           items: [
             BottomNavigationBarItem(
+              icon: Icon(Icons.home, color: colorIconSelect ?? Colors.white),
+              label: ' ',
               icon: Icon(Icons.home, color: Colors.white),
               label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(FontAwesomeIcons.comment),
-              label: 'Messages',
+              label: ' ',
             ),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: ' '),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today),
-              label: 'Calendar',
+              label: ' ',
             ),
           ],
         ),

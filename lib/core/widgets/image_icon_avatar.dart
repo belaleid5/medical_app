@@ -11,6 +11,18 @@ class ImageIconAvatarSvg extends StatelessWidget {
   });
   final String image;
   final Color? color, iconColor;
+
+class ImageIconAvatar extends StatelessWidget {
+  const ImageIconAvatar({
+    super.key,
+    required this.image,
+    this.color,
+    this.backgroundColor,
+  });
+  final String image;
+  final Color? color;
+  final Color? backgroundColor;
+
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
@@ -22,6 +34,9 @@ class ImageIconAvatarSvg extends StatelessWidget {
         width: 12,
         color: iconColor ?? AppColor.primaryColor,
       ),
+
+      backgroundColor: backgroundColor ?? AppColor.lightPrimaryColor,
+      child: SvgPicture.asset(image, height: 12, color: color),
     );
   }
 }

@@ -1,14 +1,16 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:medical_app/core/responsive_size_provider/extension_size_provider.dart';
-import 'package:medical_app/core/responsive_size_provider/size_privder.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/utils/app_images.dart';
 import 'package:medical_app/core/utils/app_text_style.dart';
 import 'package:medical_app/core/widgets/a_to_z.dart';
 import 'package:medical_app/core/widgets/image_icon_avatar.dart';
 
 class MenuIconsForSortBy extends StatelessWidget {
-  const MenuIconsForSortBy({super.key});
-
+  const MenuIconsForSortBy({super.key, or});
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -21,6 +23,15 @@ class MenuIconsForSortBy extends StatelessWidget {
         ImageIconAvatarSvg(image: AppImages.assetsImagesStarIcon),
         ImageIconAvatarSvg(image: AppImages.assetsImagesFemaleIcon),
         ImageIconAvatarSvg(image: AppImages.assetsImagesMaleIcon),
+
+        ImageIconAvatar(image: AppImages.assetsImagesStarIcon),
+        CircleAvatar(
+          radius: 16,
+          backgroundColor: AppColor.primaryColor,
+          child: Icon(Icons.favorite, color: Colors.white, size: 18),
+        ),
+        ImageIconAvatar(image: AppImages.assetsImagesFemaleIcon),
+        ImageIconAvatar(image: AppImages.assetsImagesMaleIcon),
       ],
     );
   }

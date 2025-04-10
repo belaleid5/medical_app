@@ -5,6 +5,7 @@ import 'package:medical_app/features/auth/peresention/views/sign_up/sing_up_view
 import 'package:medical_app/features/chat/presention/view/chat_view.dart';
 import 'package:medical_app/features/date_with_doctor/presentaion/views/date_with_doctor_view.dart';
 import 'package:medical_app/features/doctors/presention/views/doctors_view.dart';
+import 'package:medical_app/features/favorite/presention/views/favorite_view.dart';
 import 'package:medical_app/features/home/peresention/views/home_view.dart';
 import 'package:medical_app/features/notification/presention/view/notification_view.dart';
 import 'package:medical_app/features/profile/presention/views/profile_view.dart';
@@ -32,6 +33,9 @@ MaterialPageRoute onGenerateRoute(RouteSettings settings) {
 
     case DoctorsView.routName:
       return MaterialPageRoute(builder: (_) => DoctorsView());
+
+    case FavoriteView.routeName:
+      return MaterialPageRoute(builder: (_) => FavoriteView());
 
     case ProfileView.routeName:
       return MaterialPageRoute(builder: (_) => ProfileView());

@@ -10,6 +10,8 @@ class DoctorsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CustomBottomNavBar(),
+      appBar: buildAppBar(title: 'Doctors'),
+
       appBar: buildAppBar(title: "Doctors"),
       body: DoctorsViewBody(),
     );
