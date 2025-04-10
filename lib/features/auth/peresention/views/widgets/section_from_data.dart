@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/widgets/custom_button.dart';
 import 'package:medical_app/core/widgets/cusom_text_form_field.dart';
-import 'package:medical_app/features/auth/peresention/views/sign_up/component/data_of_birth.dart';
+import 'package:medical_app/core/widgets/data_of_birth.dart';
 import 'package:medical_app/core/widgets/form_title.dart';
 import 'package:medical_app/features/auth/peresention/views/sign_up/component/term_use_privacy.dart';
 import 'package:medical_app/features/auth/peresention/views/widgets/custom_passowrrd_form_field.dart';

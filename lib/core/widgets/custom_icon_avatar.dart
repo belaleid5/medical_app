@@ -19,11 +19,7 @@ class CustomIconAvatar extends StatelessWidget {
     return CircleAvatar(
       radius: radius == null ? 21 : radius,
       backgroundColor: color,
-      child: Icon(
-        icon,
-        color: colorIcon == null ? Colors.black : colorIcon,
-        size: sizeIcon,
-      ),
+      child: Icon(icon, color: colorIcon ?? Colors.black, size: sizeIcon),
     );
   }
 }

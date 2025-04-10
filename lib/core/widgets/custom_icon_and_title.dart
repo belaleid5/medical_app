@@ -4,12 +4,12 @@ import 'package:medical_app/core/utils/app_color.dart';
 import 'package:medical_app/core/utils/app_text_style.dart';
 
 class CustomIconAndTitle extends StatelessWidget {
-  final String rating;
+  final String title;
   final IconData icon;
 
   const CustomIconAndTitle({
     super.key,
-    required this.rating,
+    required this.title,
     required this.icon,
   });
 
@@ -23,10 +23,14 @@ class CustomIconAndTitle extends StatelessWidget {
       ),
       child: Row(
         children: [
-          FaIcon(icon, size: 14, color: AppColor.primaryColor),
+          FaIcon(
+            FontAwesomeIcons.solidHandPointDown,
+            size: 14,
+            color: AppColor.primaryColor,
+          ),
           const SizedBox(width: 3),
           Text(
-            rating,
+            title,
             style: AppTextStyle.semiBold12Weight300.copyWith(
               color: AppColor.primaryColor,
             ),

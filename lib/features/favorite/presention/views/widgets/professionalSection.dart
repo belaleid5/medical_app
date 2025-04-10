@@ -17,6 +17,8 @@ class CustomProfessionalSection extends StatelessWidget {
           image: AppImages.assetsProIcon,
           color: AppColor.primaryColor,
         ),
+
+        ImageIconAvatar(image: AppImages.assetsImagesProfIcon),
         Text(
           'Professional Doctor',
           style: AppTextStyle.semiBold20.copyWith(
